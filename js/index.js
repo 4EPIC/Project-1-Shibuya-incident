@@ -13,9 +13,6 @@ const buildSplashScreen = () => {
   `);
   const startButton = document.getElementById("start-button");
   startButton.addEventListener("click", buildGameScreen);
-
-  // ()=> {console.log("go")
-  //   setTimeout(()=>{buildGameScreen()}, 10000 )})
 };
 
 // Second Screen => Game Screen
@@ -55,7 +52,7 @@ const buildGameOver = () => {
   `);
 
   const restartButton = document.querySelector("button");
-  restartButton.addEventListener("click", buildGameScreen);
+  restartButton.addEventListener("click", buildSplashScreen);
 };
 
 const buildYouWin = () => {
@@ -75,7 +72,7 @@ const buildYouWin = () => {
   `);
 
   const restartButton = document.querySelector("button");
-  restartButton.addEventListener("click", buildGameScreen);
+  restartButton.addEventListener("click", buildSplashScreen);
 };
 
 // When the window loads, then we will run the "buildSplashScreen" function
