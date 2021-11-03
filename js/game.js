@@ -17,14 +17,21 @@ class Game {
     // Save reference to canvas and Create ctx
     this.canvas = document.querySelector("canvas");
     this.ctx = canvas.getContext("2d");
-
+    
+    // Handle Bullets
+    this.bullets = [];
+    this.handleMouseDown = (event) => {
+      let bullet = new Bullet(this.canvas, this.ctx, this.player.x, this.player.y, event.clientX, event.clientY);
+      this.bullets.push(bullet);
+    }
+    
     // Create a new player for the current game
     this.player = new Player(this.canvas, 3);
 
     // Add event listener for moving the player
     this.handleKeyboard = (event) => {
       //console.log("type", event.type);
-
+      
       if (event.type === "keydown") {
         if (event.code === "ArrowUp" || event.code === "KeyW") {
           this.player.setDirection("up");
@@ -44,12 +51,6 @@ class Game {
       }
     };
 
-    // Handle Bullets
-    this.bullets = [];
-    this.handleMouseDown = (event) => {
-      let bullet = new Bullet(this.canvas, this.ctx, this.player.x, this.player.y, event.clientX, event.clientY);
-      this.bullets.push(bullet);
-    }
     // Any function provided to eventListener
     document.body.addEventListener("keydown", this.handleKeyboard);
     document.body.addEventListener("keyup", this.handleKeyboard);

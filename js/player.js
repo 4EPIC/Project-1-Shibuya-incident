@@ -1,8 +1,5 @@
 "use strict";
 
-// const imagePj = new image()
-// imagePj.src = "../images/spriteGojo.jpeg"
-
 class Player {
   constructor(canvas, lives) {
     this.canvas = canvas;
@@ -25,23 +22,9 @@ class Player {
     this.bulletsArray = new Array();
     this.friction = 0.89;
     this.imagePj = new Image();
-    this.imagePj.src =
-      "../images/spriteGojo3.png";
+    this.imagePj.src = "../images/spriteGojo3.png";
     // this.speed = 1;
   }
-
-  // bullet(x, y, v){
-  //   this.x = x;
-  //   this.y = y;
-  //   this.v = v;
-  //   this.draw = function () {
-  //   	ctx.save();
-  // 	  ctx.fillStyle = "blue";
-  // 	  ctx.fillRect(this.x, this.y, this.w, this.w);
-  // 	  this.y = this.y - 6;
-  // 	  ctx.restore();
-  //   };
-  // }
 
   damage() {
     this.health -= 1;
@@ -81,51 +64,37 @@ class Player {
        this.y -= 5;
      }*/
 
-
-
-    if (this.canMoveUp && this.direction == 'up') {
+    if (this.canMoveUp && this.direction == "up") {
       this.y -= this.move;
     }
-    if (this.canMoveDown && this.direction == 'down') {
+    if (this.canMoveDown && this.direction == "down") {
       this.y += this.move;
     }
-    if (this.canMoveLeft && this.direction == 'left') {
+    if (this.canMoveLeft && this.direction == "left") {
       this.x -= this.move;
     }
-    if (this.canMoveRight && this.direction == 'right') {
+    if (this.canMoveRight && this.direction == "right") {
       this.x += this.move;
     }
 
     this.checkScreen();
   }
 
-  // setTimeout(() => {
-  //   if (setDirection) {
-  // 		if (timeBullet == true && municion !=0 ){
-  // 			timeBullet = false;
-  // 			bulletsArray.push(new bullet(Player+ 12, Player- 3, 5));
-  // 			setDirection = false;
-  // 			disparaEnemigo();
-  // 			setTimeout(function(){timeBullet = true;}, 300);
-  // 		}
-  // });
-
   setDirection(direction) {
     // +1 down  -1 up
-    const directions = ['up', 'down', 'left', 'right'];
+    const directions = ["up", "down", "left", "right"];
 
     if (directions.includes(direction)) {
       this.direction = direction;
     } else {
-      this.direction = null
+      this.direction = null;
     }
-
   }
 
   // Check if the player is out of the screen / canvas
   checkScreen() {
     this.canMoveDown = this.y >= this.canvas.height - this.size ? false : true;
-    this.canMoveUp = this.y <= 0? false : true;
+    this.canMoveUp = this.y <= 0 ? false : true;
     this.canMoveLeft = this.x <= 0 ? false : true;
     this.canMoveRight = this.x >= this.canvas.width - this.size ? false : true;
   }
