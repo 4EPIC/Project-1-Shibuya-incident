@@ -22,17 +22,18 @@ const buildSplashScreen = () => {
 const buildGameScreen = () => {
   buildDom(`
   <section id="clock">
-        <span>TIME: </span>
+        <span>SURVIVE:&nbsp;</span>
         <span id="secDec" class="number">0</span>
         <span id="secUni" class="number">0</span>
   </section>
+    <div class="container-score">
+        <p class="score-info"><span>Score:&nbsp;</span> <span id="score">0</span></p>
+    </div>
   <div id="game-board">
   <canvas id="canvas" width="1000" height="600"></canvas>
   </div>  
-  <P></P>
   <button id="end-button">End Game</button>
   `);
-
   const endButton = document.getElementById("end-button");
   endButton.addEventListener("click", buildGameOver);
 
@@ -63,6 +64,10 @@ const buildYouWin = () => {
   <h1>You Win</h1>
   <button id = "game"> TRY AGAIN</button>
   <div class= "pointer"> 
+  <section id="SCORE">
+        <span>SCORE:&nbsp;</span>
+        <span id="SCORE1" class="number">0</span>
+  </section>
   <img src="../images/background.jpeg" alt="" style="width:50%;" />
   <br />
   </div>
