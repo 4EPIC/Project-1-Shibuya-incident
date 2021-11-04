@@ -10,6 +10,10 @@ const buildSplashScreen = () => {
   <img src="./images/logo.png" alt="" style="width:50%;" />
   <br />
   <button id="start-button">Start Game</button>
+  <span>&nbsp;</span>
+  <div class= "pointer"> 
+  <img src="./images/instructions.png" alt="" style="width:50%;" />
+  <br />
   `);
   const startButton = document.getElementById("start-button");
   startButton.addEventListener("click", buildGameScreen);

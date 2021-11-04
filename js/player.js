@@ -4,7 +4,7 @@ class Player {
   constructor(canvas, lives) {
     this.canvas = canvas;
     this.ctx = this.canvas.getContext("2d");
-    this.canvasHeight = 600;
+    // this.canvasHeight = 600;
     this.lives = lives;
     this.size = 60;
     this.x = canvas.width / 2 - this.size / 2;
