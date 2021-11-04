@@ -49,7 +49,7 @@ const buildGameOver = () => {
   <h1>Game Over</h1>
   <button id = "game"> TRY AGAIN</button>
   <div class= "pointer"> 
-  <img src="/images/gameover.jpeg" alt="" style="width:50%;" />
+  <img src="./images/gameover.jpeg" alt="" style="width:50%;" />
   <br />
   </div>
   </section>
