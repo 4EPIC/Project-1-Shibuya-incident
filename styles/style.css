@@ -4,7 +4,7 @@ body {
   text-align: center;
   width: 1200px;
   margin: 0 auto;
-  background-image: url(images/1142818.jpeg);
+  background-image: url(../images/1142818.jpeg);
 }
 
 body h1 {
@@ -70,7 +70,7 @@ body button {
 
 #canvas {
   border: groove 1px rgb(255, 255, 255);
-  background: url(images/scorched_earth.png);
+  background: url(../images/scorched_earth.png);
   image-resolution: center;
   box-shadow: 10px 10px 10px #464646;
 }
