@@ -14,7 +14,7 @@ class Player {
     this.canRight = true;
     this.direction = null;
     this.imagePj = new Image();
-    this.imagePj.src = "../images/spriteGojo3.png";
+    this.imagePj.src = "/images/spriteGojo3.png";
   }
 
   update() {
