@@ -12,7 +12,7 @@ const buildSplashScreen = () => {
   <button id="start-button">Start Game</button>
   <span>&nbsp;</span>
   <div class= "pointer"> 
-  <img src="/images/instructions.png" alt="" style="width:50%;" />
+  <img src="./images/instructions.png" alt="" style="width:50%;" />
   <br />
   `);
   const startButton = document.getElementById("start-button");
@@ -69,7 +69,7 @@ const buildYouWin = () => {
         <span>SCORE:&nbsp;</span>
         <span id="SCORE1" class="number">0</span>
   </section>
-  <img src="/images/background.jpeg" alt="" style="width:50%;" />
+  <img src="./images/background.jpeg" alt="" style="width:50%;" />
   <br />
   </div>
   </section>
