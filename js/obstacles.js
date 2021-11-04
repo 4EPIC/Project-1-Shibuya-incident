@@ -48,17 +48,6 @@ class Obstacle {
     }
   }
 
-
-  damage() {
-    this.health -= 1;
-    if (this.health <= 0) {
-      this.alive = false;
-      this.Obstacle.kill();
-      return true;
-    }
-    return false;
-  }
-
   draw() {
     if (this.alive) {
       // We will first draw squares
@@ -71,6 +60,5 @@ class Obstacle {
   move() {
     this.x += this.speedX;
     this.y += this.speedY;
-
   }
 }

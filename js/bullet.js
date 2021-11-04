@@ -2,7 +2,6 @@
 
 class Bullet {
   constructor(canvas, ctx, playerX, playerY, clientX, clientY) {
-
     this.ctx = ctx;
     this.canvas = canvas;
     this.x = playerX;

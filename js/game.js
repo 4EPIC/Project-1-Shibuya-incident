@@ -53,8 +53,6 @@ class Game {
 
     // Add event listener for moving the player
     this.handleKeyboard = (event) => {
-      //console.log("type", event.type);
-
       if (event.type === "keydown") {
         if (event.code === "ArrowUp" || event.code === "KeyW") {
           this.player.setDirection("up");
@@ -84,7 +82,6 @@ class Game {
 
   printTime() {
     const time = ("0" + this.timer).slice(-2);
-    //console.log("seconds: ", time);
     document.getElementById("secDec").innerText = time[0];
     document.getElementById("secUni").innerText = time[1];
   }
@@ -138,7 +135,6 @@ class Game {
 
       // 4. TERMINATE LOOP IF YOU WIN OR IF GAME OVER
       if (!this.gameIsOver && this.timer > 0) {
-        //console.log("timer", this.timer);
         window.requestAnimationFrame(loop);
       } else if (!this.gameIsOver && this.timer === 0) {
         buildYouWin();
@@ -175,8 +171,6 @@ class Game {
           this.musicDeath.cloneNode().play();
           this.score += 25;
           document.querySelector("#score").innerText = this.score;
-
-          console.log(this.score);
         }
       });
     });

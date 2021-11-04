@@ -13,8 +13,6 @@ class Player {
     this.canLeft = true;
     this.canRight = true;
     this.direction = null;
-    this.timeBullet = true;
-    this.bulletsArray = new Array();
     this.imagePj = new Image();
     this.imagePj.src = "../images/spriteGojo3.png";
   }
