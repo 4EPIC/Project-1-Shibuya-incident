@@ -12,7 +12,7 @@ class Obstacle {
     this.color = "red";
     this.size = 30;
     this.imageEn = new Image();
-    this.imageEn.src = type == 0 ? "/images/goomba.png" : "../images/metroid.png";
+    this.imageEn.src = type == 0 ? "images/goomba.png" : "images/metroid.png";
     this.alive = true;
   }
   kill() {

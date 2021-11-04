@@ -13,7 +13,7 @@ class Bullet {
     this.vy = (clientY - playerY).map(-100, 600, -50, 50) * this.velocity;
     this.size = 30;
     this.imageEn = new Image();
-    this.imageEn.src = "/images/bullet.png";
+    this.imageEn.src = "images/bullet.png";
     this.alive = true;
   }
 

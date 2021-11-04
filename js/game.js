@@ -12,17 +12,17 @@ class Game {
     this.timer = 30;
     this.clockId = null;
     this.musicIntro = new Audio();
-    this.musicIntro.src = "../music/musicainicio.mp3";
+    this.musicIntro.src = "music/musicainicio.mp3";
     this.musicCanvas = new Audio();
-    this.musicCanvas.src = "../music/backgroundsong8bit.mp3";
+    this.musicCanvas.src = "music/backgroundsong8bit.mp3";
     this.musicWin = new Audio();
-    this.musicWin.src = "../music/win3.mp3";
+    this.musicWin.src = "music/win3.mp3";
     this.musicLose = new Audio();
-    this.musicLose.src = "../music/ending.mp3";
+    this.musicLose.src = "music/ending.mp3";
     this.musicShot = new Audio();
-    this.musicShot.src = "../music/ bullet.mp3";
+    this.musicShot.src = "music/ bullet.mp3";
     this.musicDeath = new Audio();
-    this.musicDeath.src = "../music/enemy.mp3";
+    this.musicDeath.src = "music/enemy.mp3";
   }
 
   start() {
