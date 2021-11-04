@@ -9,7 +9,7 @@ class Game {
     this.gameIsOver = false;
     this.score = 0;
     this.finalScore = 0;
-    this.timer = 30;
+    this.timer = 60;
     this.clockId = null;
     this.musicIntro = new Audio();
     this.musicIntro.src = "music/musicainicio.mp3";
