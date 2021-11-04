@@ -34,6 +34,7 @@ body button {
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
   text-shadow: 2px 2px 2px #464646;
+  margin-left: 14%;
 }
 
 #SCORE {
@@ -59,6 +60,7 @@ body button {
 }
 
 .container {
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

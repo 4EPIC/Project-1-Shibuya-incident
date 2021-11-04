@@ -10,7 +10,7 @@ const buildSplashScreen = () => {
   <img src="./images/logo.png" alt="" style="width:50%;" />
   <br />
   <button id="start-button">Start Game</button>
-  <span>&nbsp;</span>
+  <div>&nbsp;</div>
   <div class= "pointer"> 
   <img src="./images/instructions.png" alt="" style="width:50%;" />
   <br />
