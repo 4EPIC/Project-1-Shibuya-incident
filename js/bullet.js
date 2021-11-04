@@ -20,6 +20,7 @@ class Bullet {
   kill(){
     this.alive = false;
   }
+  
   draw() {
     if (this.alive) {
       this.ctx.fillStyle = this.color;

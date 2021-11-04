@@ -35,9 +35,7 @@ class Player {
   }
 
   setDirection(direction) {
-    // +1 down  -1 up
     const directions = ["up", "down", "left", "right"];
-
     if (directions.includes(direction)) {
       this.direction = direction;
     } else {
