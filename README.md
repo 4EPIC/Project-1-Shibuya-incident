@@ -24,14 +24,14 @@ This game is thought to have the **next caracteristics**.
 
 ```bash
 $ Roboto
-- More resist.
+- More resistance.
 - Power up Inmunity 5s.
 $ Slime
-- Follow player.
+- Follows player.
 - Power up Random.
 $ Alien
-- Capaz de disparar.
-- Power up de Arma.
+- Can shoot.
+- Power up de weapon.
 ```
 - Appear from any wall of the Canvas.
 
@@ -46,7 +46,7 @@ $ Alien
 
 ```bash
 $ Move
-- Should dont go off the edge.
+- Should not go off the edge.
 - Control with AWSD or ARROWS.
 $ Shoot
 - Hard to control.
@@ -55,10 +55,10 @@ $ Shoot
 ```
 
 # Shoot Energy Game 
-Shoot energy in this game it's not easy! You have to may use to survive in this game. When you click near the Player, the shoots gonna be more slow, and when you click so far the player, the shoots gonna be more fast. Practice!
+Shoot energy in this game it's not easy! You need to use shooting to survive in this game. When you click near the Player, the shoots gonna be more slow, and when you click so far the player, the shoots gonna be more fast. Practice!
 
 ## How does it work?
-The game screen contains a Canvas where a Player dotch and shoot enemies for win score and survive 60s, last, player can see "Game Over" when die or "You Win" and his Score when survive.
+The game screen contains a Canvas where a Player dotch and shoot enemies to win score and survive 60s. Last, the player can see "Game Over" when die or "You Win" and his Score when survive.
 
 All enemies appear randomly in canvas with diferent velocity.
 
@@ -133,15 +133,15 @@ HTML5, DOM, **Canvas** and Vanilla **Javascript**
 * Add music on/off button to setup
 * Add sound effects to diferents situations
 ### Power Up
-* Add diferents Power Up
+* Add diferent Power Up
   * Inmunity for 5 sec
   * Normal Shoot
   * Atomic Bomb
 ### Enemies
-* Implement diferent class
-  * Robot more resist
+* Implement diferent types
+  * Robot more resistance
   * Alien can shoot
-  * Slime follow the Player
+  * Slime follows the Player
 
 ## Data structure
 __index.js__
