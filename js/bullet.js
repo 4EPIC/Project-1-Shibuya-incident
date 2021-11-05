@@ -24,7 +24,7 @@ class Bullet {
   draw() {
     if (this.alive) {
       this.ctx.fillStyle = this.color;
-      this.ctx.drawImage(this.imageEn, this.x, this.y, this.size, this.size);
+      this.ctx.drawImage(this.imageEn, this.x +15 , this.y +20, this.size, this.size);
     }
   }
 
